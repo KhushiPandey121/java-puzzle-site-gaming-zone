@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Java Puzzle Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Java Puzzle</h1>
+
+        <pre>
+public class Test {
+    public static void main(String[] args) {
+        int x = 5;
+        System.out.println(x++ + ++x);
+    }
+}
+<div class="container">
+    <h1>Java Puzzle Hub</h1>
+
+    <pre id="question"></pre>
+
+    <div id="options"></div>
+
+    <button onclick="checkAnswer()">Check Answer</button>
+    <button onclick="nextQuestion()">Next</button>
+
+    <p id="result"></p>
+    <p id="score"></p>
+</div>
+        </pre>
+
+        <h3>What will be the output?</h3>
+
+        <div class="options">
+            <input type="radio" name="answer" value="11" placeholder="answer"> 11 <br>
+            <input type="radio" name="answer" value="12" placeholder="answer"> 12 <br>
+            <input type="radio" name="answer" value="13" placeholder="answer"> 13 <br>
+            <input type="radio" name="answer" value="14" placeholder="answer"> 14 <br>
+        </div>
+
+        <button onclick="checkAnswer()">Check Answer</button>
+
+        <p id="result"></p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
